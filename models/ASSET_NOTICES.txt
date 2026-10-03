@@ -1,0 +1,19 @@
+Workshop v12 asset notices
+
+The v12 foreground architecture, terrain, timber structures, vegetation and props
+are original procedural geometry created for this project. They are assembled
+into an editable Blender source and exported as workshop-v12.glb. Articulated
+people, the waterwheel, water, crane load and lamps are animated by Three.js.
+
+The current v12 interchange has no imported third-party model instances.
+The VVayToyek pavilion, Kenney log piles and MountainLabz Fluffy Pine used in the
+earlier v9 candidate are not included in workshop-v12.glb. Their originals,
+permissions and prepared assets remain archived separately in the project.
+The earlier MountainLabz permission is custom permissive wording, not CC0.
+
+The supplied design image is a retained visual reference. Generated background
+art is a separate website asset, not a baked replacement for foreground geometry.
+
+The local Draco decoder is Copyright Google Inc., licensed under Apache-2.0.
+The complete license is shipped at ../decoders/draco/LICENSE.txt.
+No remote decoder service is required.
