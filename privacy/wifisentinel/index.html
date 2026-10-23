@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#e9e3d5" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script>try{if(performance.getEntriesByType('navigation')[0]?.type==='back_forward'&&sessionStorage.getItem('ailifelab-entry-seen'))document.documentElement.classList.add('entry-seen')}catch{}</script>
+    <title>WiFi 哨兵 · 隐私说明 · AILife Lab</title>
+    <meta name="description" content="WiFi 哨兵 · 本说明仅适用于本产品。请按实际使用的功能查看数据流、权限与删除边界。" />
+    <script type="module" crossorigin src="/assets/index-D9_-1m5S.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CIidg7Z2.css">
+  <link rel="canonical" href="https://ailifelab.com/zh-Hans/privacy/wifisentinel/" /><link rel="alternate" hreflang="zh-Hans" href="https://ailifelab.com/zh-Hans/privacy/wifisentinel/" /><link rel="alternate" hreflang="zh-Hant" href="https://ailifelab.com/zh-Hant/privacy/wifisentinel/" /><link rel="alternate" hreflang="en" href="https://ailifelab.com/en/privacy/wifisentinel/" /><link rel="alternate" hreflang="x-default" href="https://ailifelab.com/zh-Hans/privacy/wifisentinel/" /></head>
+  <body>
+    <!--email_off--><div id="root"><div class="inner-site localized-site localized-zh-Hans" lang="zh-Hans"><header class="inner-header"><a class="inner-brand" href="/" aria-label="工造院"><span class="inner-brand-cn">爱物工造</span><span class="inner-brand-en">AILife Lab</span></a><nav class="inner-nav" aria-label="主导航"><a href="/">工造院</a><a href="/zh-Hans/apps/">众器</a><a href="/zh-Hans/privacy/">隐私说明</a><a href="/notes/">工造手记</a><a href="/about/">关于</a></nav><div class="inner-header-actions"><nav class="inner-languages" aria-label="切换语言"><a href="/zh-Hans/privacy/wifisentinel/" hrefLang="zh-Hans" lang="zh-Hans" aria-current="page">简体</a><a href="/zh-Hant/privacy/wifisentinel/" hrefLang="zh-Hant" lang="zh-Hant">繁體</a><a href="/en/privacy/wifisentinel/" hrefLang="en" lang="en">English</a></nav><details class="inner-mobile-nav"><summary aria-label="菜单">☰</summary><nav aria-label="主导航"><a href="/">工造院</a><a href="/zh-Hans/apps/">众器</a><a href="/zh-Hans/privacy/">隐私说明</a><a href="/notes/">工造手记</a><a href="/about/">关于</a></nav></details></div></header><main id="main-content" class="inner-main"><div class="inner-breadcrumb"><a href="/zh-Hans/privacy/">隐私说明</a><span>/</span><span>WiFi 哨兵</span></div><div class="inner-page-lead"><p class="inner-eyebrow">AILIFE LAB</p><h1>WiFi 哨兵 · 隐私说明</h1><p>本说明仅适用于本产品。请按实际使用的功能查看数据流、权限与删除边界。</p></div><div class="inner-content-grid inner-policy-grid"><article class="inner-section"><div class="inner-prose"><p>版本、生效与更新日期：2026-10-23。适用于 WiFi 哨兵 0.1 / build 5.3。维护与支持：AILife Lab。本文由CODEX全自动编写。</p>
+<h3>1. 本地设置与诊断</h3>
+<p>设置、事件、运行快照及恢复策略状态保存在本机用户目录 <code>~/Library/Application Support/WiFiSentinel/</code>。网络名称可能以明文出现；诊断也可能包含网关、接口、地址派生摘要、权限、故障、次数和时间。摘要或哈希仍可能被猜测、关联，不保证匿名。</p>
+<p>应用不把本地观察日志自动上传到维护者服务，不读取 Wi-Fi 密码、私钥或位置坐标。</p>
+<h3>2. 检测会发送网络请求</h3>
+<p>默认业务探测向以下公开目标发送有界请求：</p>
+<ul>
+<li><code>https://www.apple.com/library/test/success.html</code></li>
+<li><code>https://www.cloudflare.com/cdn-cgi/trace</code></li>
+</ul>
+<p>你可设置其他业务目标。目标服务、网络中间设备及 VPN 提供方可能观察来源地址、时间与连接特征；这不是完全离线的监测。外部服务如何保存请求信息受其自身政策管理，见 <a href="https://www.apple.com/legal/privacy/">Apple</a> 与 <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>。本地网络检测也会与所检测网络设备通信。</p>
+<h3>3. 系统权限与控制</h3>
+<p>读取实际 Wi-Fi 名称可能需要系统定位授权，该授权用于网络信息读取，不代表应用采集位置坐标。你可以拒绝或在 macOS 设置撤销；部分网络核对功能可能不可用。应用不安装特权后台服务，签名公证不会自动授予权限。</p>
+<p>自动恢复每次启动默认关闭，按本次确认才启用。恢复可能关开 Wi-Fi，影响当前连接；你可只用监测或正常退出应用停止检测。</p>
+<h3>4. 保存、导出与删除</h3>
+<p>设置和诊断在本地用于检测、排错与恢复状态判断，异常日志有容量上限。卸载应用不自动清除上述用户目录。请先正常退出并确认没有未完成的 Wi-Fi 恢复事务，再自行备份或删除目录；删除也会清除设置与冷却记录。</p>
+<p>你主动导出或提交诊断时，接收方会获得该文件。提交前删除 SSID、地址、用户名、主机名、私人路径等信息；不要在公开 Issue 粘贴完整设置或原始快照。系统备份、已导出文件及接收方副本需分别管理。</p>
+<h3>5. 支持与更新</h3>
+<p>访问 GitHub、官网或发送支持邮件，会向相应网站或邮件服务提供正常请求信息。发送至 <a href="mailto:sherardchina@gmail.com">sherardchina@gmail.com</a> 的邮箱及自愿提供的信息用于处理请求；可请求删除我们可控制的支持通信，法律要求保留的记录除外。</p>
+<p>本应用是网络工具，不主动索取年龄或儿童资料。若处理方式改变，会更新本说明并按适用要求告知和取得授权。本说明不保证任何网络环境或接收方的绝对安全。</p></div></article><aside class="inner-product-aside"><h2>政策信息</h2><dl><dt>政策版本</dt><dd>2026-10-23</dd><dt>生效日期</dt><dd>2026-10-23</dd><dt>最近更新</dt><dd>2026-10-23</dd><dt>维护品牌</dt><dd>AILife Lab</dd><dt>联系支持</dt><dd><a href="mailto:sherardchina@gmail.com">sherardchina@gmail.com</a></dd></dl><a href="/zh-Hans/apps/wifisentinel/">查看产品介绍<!-- --> ↗</a></aside></div></main><footer class="inner-footer"><div><strong>AILife Lab</strong><span>观物 · 爱物 · 造物</span></div><nav aria-label="主导航"><a href="/zh-Hans/apps/">众器</a><a href="/zh-Hans/privacy/">隐私说明</a><a href="/notes/">工造手记</a><a href="/about/">关于</a></nav></footer></div></div><!--/email_off-->
+  </body>
+</html>

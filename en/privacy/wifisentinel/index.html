@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#e9e3d5" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script>try{if(performance.getEntriesByType('navigation')[0]?.type==='back_forward'&&sessionStorage.getItem('ailifelab-entry-seen'))document.documentElement.classList.add('entry-seen')}catch{}</script>
+    <title>WiFiSentinel · Privacy · AILife Lab</title>
+    <meta name="description" content="WiFiSentinel · This notice applies to this app. Review the data flows, permissions and deletion limits for the functions you use." />
+    <script type="module" crossorigin src="/assets/index-D9_-1m5S.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CIidg7Z2.css">
+  <link rel="canonical" href="https://ailifelab.com/en/privacy/wifisentinel/" /><link rel="alternate" hreflang="zh-Hans" href="https://ailifelab.com/zh-Hans/privacy/wifisentinel/" /><link rel="alternate" hreflang="zh-Hant" href="https://ailifelab.com/zh-Hant/privacy/wifisentinel/" /><link rel="alternate" hreflang="en" href="https://ailifelab.com/en/privacy/wifisentinel/" /><link rel="alternate" hreflang="x-default" href="https://ailifelab.com/zh-Hans/privacy/wifisentinel/" /></head>
+  <body>
+    <!--email_off--><div id="root"><div class="inner-site localized-site localized-en" lang="en"><header class="inner-header"><a class="inner-brand" href="/" aria-label="Workshop"><span class="inner-brand-cn">爱物工造</span><span class="inner-brand-en">AILife Lab</span></a><nav class="inner-nav" aria-label="Main navigation"><a href="/">Workshop</a><a href="/en/apps/">Apps</a><a href="/en/privacy/">Privacy</a><a href="/notes/">Notes</a><a href="/about/">About</a></nav><div class="inner-header-actions"><nav class="inner-languages" aria-label="Choose language"><a href="/zh-Hans/privacy/wifisentinel/" hrefLang="zh-Hans" lang="zh-Hans">简体</a><a href="/zh-Hant/privacy/wifisentinel/" hrefLang="zh-Hant" lang="zh-Hant">繁體</a><a href="/en/privacy/wifisentinel/" hrefLang="en" lang="en" aria-current="page">English</a></nav><details class="inner-mobile-nav"><summary aria-label="Menu">☰</summary><nav aria-label="Main navigation"><a href="/">Workshop</a><a href="/en/apps/">Apps</a><a href="/en/privacy/">Privacy</a><a href="/notes/">Notes</a><a href="/about/">About</a></nav></details></div></header><main id="main-content" class="inner-main"><div class="inner-breadcrumb"><a href="/en/privacy/">Privacy</a><span>/</span><span>WiFiSentinel</span></div><div class="inner-page-lead"><p class="inner-eyebrow">AILIFE LAB</p><h1>WiFiSentinel · Privacy</h1><p>This notice applies to this app. Review the data flows, permissions and deletion limits for the functions you use.</p></div><div class="inner-content-grid inner-policy-grid"><article class="inner-section"><div class="inner-prose"><p>Version, effective date and update date: October 23, 2026. Applies to WiFiSentinel 0.1 / build 5.3. Maintainer and support: AILife Lab. This text was written entirely by CODEX.</p>
+<h3>1. Local settings and diagnostics</h3>
+<p>Settings, events, snapshots and recovery-policy state stay in the local user directory <code>~/Library/Application Support/WiFiSentinel/</code>. Network names may appear in plain text. Diagnostics may contain gateways, interfaces, address-derived summaries, permissions, faults, counts and timestamps. Summaries and hashes can still be guessed or correlated and are not guaranteed anonymous.</p>
+<p>The app does not automatically upload observation logs to a maintainer service or read Wi-Fi passwords, private keys or location coordinates.</p>
+<h3>2. Probes make network requests</h3>
+<p>Default business probes send bounded requests to:</p>
+<ul>
+<li><code>https://www.apple.com/library/test/success.html</code></li>
+<li><code>https://www.cloudflare.com/cdn-cgi/trace</code></li>
+</ul>
+<p>You can configure other targets. Target services, network intermediaries and VPN providers may observe source addresses, timing and connection characteristics. Monitoring is not entirely offline. External services retain request information under their own policies: <a href="https://www.apple.com/legal/privacy/">Apple</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>. Local checks also communicate with the network devices being tested.</p>
+<h3>3. System permissions and controls</h3>
+<p>Reading the actual Wi-Fi name may require system location authorization. That permission supports reading network information; the app does not collect coordinates. You can deny or revoke it in macOS Settings, which may limit network verification. The app installs no privileged background service. Signing and notarization do not automatically grant permissions.</p>
+<p>Automatic recovery is disabled on every launch and enabled only by confirmation for that session. Recovery can cycle Wi-Fi and interrupt connections. You can monitor without recovery or quit normally to stop checks.</p>
+<h3>4. Retention, export and deletion</h3>
+<p>Local settings and diagnostics support checks, troubleshooting and recovery-state decisions. Anomaly logs are bounded. Removing the app does not automatically delete its user-data directory. Quit normally and confirm no Wi-Fi recovery transaction remains before backing up or deleting the directory. Deletion also removes settings and cooldown records.</p>
+<p>When you export or submit diagnostics, the recipient receives that file. Remove SSIDs, addresses, usernames, hostnames and private paths first. Do not post complete settings or raw snapshots in a public issue. Manage system backups, exports and recipient copies separately.</p>
+<h3>5. Support and changes</h3>
+<p>Visiting GitHub or this website, or sending support email, shares normal request information with the relevant website or email service. Your address and information voluntarily sent to <a href="mailto:sherardchina@gmail.com">sherardchina@gmail.com</a> are used to handle the request. You may request deletion of correspondence we control, except legally required records.</p>
+<p>This network utility does not actively request age or children&#x27;s data. If data handling changes, this notice will be updated with notice and authorization where applicable. It does not guarantee absolute safety for any network environment or recipient.</p></div></article><aside class="inner-product-aside"><h2>Policy information</h2><dl><dt>Policy version</dt><dd>2026-10-23</dd><dt>Effective date</dt><dd>2026-10-23</dd><dt>Last updated</dt><dd>2026-10-23</dd><dt>Maintainer</dt><dd>AILife Lab</dd><dt>Contact support</dt><dd><a href="mailto:sherardchina@gmail.com">sherardchina@gmail.com</a></dd></dl><a href="/en/apps/wifisentinel/">View app details<!-- --> ↗</a></aside></div></main><footer class="inner-footer"><div><strong>AILife Lab</strong><span>Observe · Care · Create</span></div><nav aria-label="Main navigation"><a href="/en/apps/">Apps</a><a href="/en/privacy/">Privacy</a><a href="/notes/">Notes</a><a href="/about/">About</a></nav></footer></div></div><!--/email_off-->
+  </body>
+</html>
